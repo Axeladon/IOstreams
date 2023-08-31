@@ -1,7 +1,9 @@
 package Task3;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class WordFrequencyCounter {
@@ -19,7 +21,10 @@ public class WordFrequencyCounter {
             e.printStackTrace();
         }
 
-        for (Map.Entry<String, Integer> word : mapWordCounter.entrySet()) {
+        List<Map.Entry<String, Integer>> list = new ArrayList<>(mapWordCounter.entrySet());
+        list.sort(Map.Entry.<String, Integer>comparingByValue().reversed());
+
+        for (Map.Entry<String, Integer> word : list) {
             System.out.println(word.getKey() + " " + word.getValue());
         }
     }

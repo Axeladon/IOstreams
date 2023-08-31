@@ -7,15 +7,15 @@ import Task3.WordFrequencyCounter;
 public class Main {
     public static void main(String[] args) {
         //task1
-        PhoneNumberValidator phoneNumberValidator = new PhoneNumberValidator();
-        phoneNumberValidator.printValidPhoneNumbersFromFile("src/files/file.txt");
+        //PhoneNumberValidator phoneNumberValidator = new PhoneNumberValidator();
+        //phoneNumberValidator.printValidPhoneNumbersFromFile("src/files/file.txt");
 
         //task2
-        WordFrequencyCounter wordFrequencyCounter = new WordFrequencyCounter();
-        wordFrequencyCounter.wordCounter("src/files/words.txt");
+        //JsonBuilder jsonBuilder = new JsonBuilder();
+        //jsonBuilder.processUserFileAndGenerateJSON("src/files2/file.txt", "src/files2/user.json");
 
         //task3
-        JsonBuilder jsonBuilder = new JsonBuilder();
-        jsonBuilder.processUserFileAndGenerateJSON("src/files2/file.txt", "src/files2/user.json");
+        WordFrequencyCounter wordFrequencyCounter = new WordFrequencyCounter();
+        wordFrequencyCounter.wordCounter("src/files/words.txt");
     }
 }
